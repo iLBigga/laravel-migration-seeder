@@ -9,7 +9,7 @@ class PageController extends Controller
 {
     public function index()
     {
-        $trains = Train::all();
+        $trains = Train::orderBy('orario_partenza')->get();
         // dump($trains);
         return view('home', compact('trains'));
     }
