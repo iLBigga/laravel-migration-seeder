@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+    <h1>Tabellone Partenze</h1>
     <div class="container">
         <div class="row">
             @foreach ($trains as $train)
                 <div class="card">
-                    <h3>{{ $train->azienda }}-{{ $train->codice_treno }}</h3>
+                    <h2>{{ $train->azienda }}-{{ $train->codice_treno }}</h2>
                     <div class="partenza">
                         <span>Stazione Partenza: <b>{{ $train->stazione_partenza }}</b></span>
                         <span>Orario Partenza: <b>{{ $train->orario_partenza }}</b></span>

@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  text-align: center;
+}
+
+main .container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+main .card {
+  background-color: beige;
+  padding: 20px;
+  border-bottom: 1px solid black;
+}
+
+main .card h2 {
+  padding-bottom: 15px;
+}
+
+main .card .partenza,
+main .card .arrivo {
+  padding-bottom: 10px;
+}
+
